@@ -20,6 +20,10 @@ public class HomeController {
         this.showcaseService = showcaseService;
     }
 
+    private String hello() {
+        return "hello";
+    }
+
     @RequestMapping("/")
     public String mainPage(Model model) {
         model.addAttribute("pageMessage", pageMessage);
